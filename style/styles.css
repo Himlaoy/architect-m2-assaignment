@@ -161,13 +161,16 @@ main img{
 .box-container{
     width: 120px;
     height: 120px;
-    border: 1px solid sandybrown;
-    display: flex;
+    border: 2px solid sandybrown;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 2px;
+}
+.box-container:hover{
+    border-color: brown;
 }
 .box-container img{
     width: 50px;
@@ -185,6 +188,7 @@ main img{
 .sponsors img{
     width: 70px;
     height: 40px;
+    filter: grayscale(100%);
 }
 .spons-pic{
     display: flex;
@@ -215,4 +219,95 @@ main img{
     justify-content: center;
     background-color: antiquewhite;
 }
+.hide{
+    display: none;
+}
 
+/* media quarry */
+
+@media screen and (max-width: 568px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .brand-banner{
+        margin: 20px;
+        align-items: center;
+    }
+    header img{
+        width: 350px;
+        height: 200px;
+    }
+    .grid-area{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .grid-box-description{
+        text-align: center;
+    }
+    .feature{
+        text-align: center;
+        margin: 4px 20px;
+    }
+    .architect-detail{
+        margin: 4px 5px;
+    }
+    .secondary{
+        text-align: center;
+    }
+    .grid-box{
+        display: flex;
+        flex-direction: column;
+    }
+    main img{
+        width: 350px;
+        height: 350px;
+    }
+    .architecture{
+        display: flex;
+        width: 350px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .girl-architecture img{
+       width: 350px;
+       margin-top: 20px;
+    }
+     
+    /* .box-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .factor{
+        width: 350px;
+        height: 120px;
+        margin-left: 50px;
+    }
+    .fact-container{
+        width: 350px;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+
+        
+    }
+    .facts-title{
+        margin-right: 120px;
+    }
+    .spons-container, .spons-pic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .spons-title{
+        margin: 2px 50px;
+    }
+    .foooter{
+        width: 350px;
+    }
+
+}
